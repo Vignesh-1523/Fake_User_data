@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('hacker-world.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* backdrop-filter: blur(2px); */
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* not original format */
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); original formt */
+    padding: 20px;
+    width: 80%;
+    /* background-color: rgba(255, 255, 255, 0.233); */
+    position: relative;
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    /* border: 1px solid rgba(235, 252, 0, 0.521); */
+}
+h1{
+    font-size: 3em;
+    text-align: center;
+    color: rgba(235, 252, 0, 0.788);
+    margin-block: 30px;
+    font-family: monospace;
+}
+.inp{
+    padding: 5px;
+    margin-top: 20px;
+    margin-inline: 20px;
+    width: 230px; /* not original format */
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+}
+label{
+    width: 30%;
+    padding: 5px;
+    /* background-color: rgba(128, 255, 0, 0.534); */
+    font-size: 20px;
+    margin-bottom: 10px;
+    /* color: white;     */
+    color: rgb(235, 252, 0);
+    font-family: monospace;
+}
+input{
+    font-family: monospace;
+    padding: 17px;
+    max-width: 220px;  /* not original format */
+    font-size: 1.25em;
+    outline: none;
+    background: rgb(0, 0, 0);
+    border: 1px solid rgb(180, 179, 179);
+    /* color: rgb(235, 252, 0); */
+    color: white;
+}
+input::placeholder{
+    color: rgb(235, 252, 0);
+}
+button{
+    font-family: monospace;
+    margin-block: 30px;
+    width: 200px;
+    padding: 15px;
+    font-size: 1.7em;
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(171, 173, 0);
+}
+.btn{
+    backdrop-filter: blur(2px);
+    padding: 5px 25px 5px 25px;
+}
